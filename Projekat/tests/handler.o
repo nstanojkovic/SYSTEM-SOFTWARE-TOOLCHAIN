@@ -1,0 +1,72 @@
+FIRST PASS#.symtab
+Num Value   Size     Type     Bind     Ndx        Name
+0   0       0        NOTYP    LOC      UND        
+1   0       0        NOTYP    GLOB     UND        isr_timer
+2   0       0        NOTYP    GLOB     UND        isr_terminal
+3   0       0        NOTYP    GLOB     UND        isr_software
+4   0       0        NOTYP    GLOB     5          handler
+5   0       76       SCTN     LOC      5          my_handler
+6   36      0        NOTYP    LOC      5          finish
+7   52      0        NOTYP    LOC      5          handle_timer
+8   60      0        NOTYP    LOC      5          handle_terminal
+9   68      0        NOTYP    LOC      5          handle_software
+
+
+#.section_tab
+ID  SIZE        NAME        Literals:
+1   76          my_handler  2, 3, 4, 
+
+
+SECOND PASS#.symtab
+Num Value   Size     Type     Bind     Ndx        Name
+0   0       0        NOTYP    LOC      UND        
+1   0       0        NOTYP    GLOB     UND        isr_timer
+2   0       0        NOTYP    GLOB     UND        isr_terminal
+3   0       0        NOTYP    GLOB     UND        isr_software
+4   0       0        NOTYP    GLOB     5          handler
+5   0       76       SCTN     LOC      5          my_handler
+6   36      0        NOTYP    LOC      5          finish
+7   52      0        NOTYP    LOC      5          handle_timer
+8   60      0        NOTYP    LOC      5          handle_terminal
+9   68      0        NOTYP    LOC      5          handle_software
+
+
+#.section_tab
+ID  SIZE        NAME        Literals:
+1   76          my_handler  2, 3, 4, 
+
+
+#.machice_code: 
+my_handler
+0000: 81 e0 1f fc 81 e0 2f fc 
+0008: 90 12 00 00 91 2f 00 00 
+0010: 31 f1 20 00 91 2f 00 00 
+0018: 31 f1 20 00 91 2f 00 00 
+0020: 31 f1 20 00 93 2e 00 04 
+0028: 93 1e 00 04 96 0e 00 04 
+0030: 93 fe 00 08 20 f0 00 00 
+0038: 30 f0 00 00 20 f0 00 00 
+0040: 30 f0 00 00 20 f0 00 00 
+0048: 30 f0 00 00 02 00 00 00 
+0050: 03 00 00 00 04 00 00 00 
+
+
+
+
+#.rel_table: my_handler
+Offset RelocationType Number     Addend 
+000e   R_PC_32           5          003c
+0012   R_32              5          0034
+0016   R_PC_32           5          0038
+001a   R_32              5          003c
+001e   R_PC_32           5          0034
+0022   R_32              5          0044
+0036   R_32              1          0000
+003a   R_32              5          0024
+003e   R_32              2          0000
+0042   R_32              5          0024
+0046   R_32              3          0000
+004a   R_32              5          0024
+
+
+

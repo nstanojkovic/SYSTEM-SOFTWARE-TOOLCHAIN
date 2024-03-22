@@ -1,0 +1,53 @@
+FIRST PASS#.symtab
+Num Value   Size     Type     Bind     Ndx        Name
+0   0       0        NOTYP    LOC      UND        
+1   0       0        NOTYP    GLOB     5          mathAdd
+2   24      0        NOTYP    GLOB     5          mathSub
+3   48      0        NOTYP    GLOB     5          mathMul
+4   72      0        NOTYP    GLOB     5          mathDiv
+5   0       96       SCTN     LOC      5          math
+
+
+#.section_tab
+ID  SIZE        NAME        Literals:
+1   96          math        
+
+
+SECOND PASS#.symtab
+Num Value   Size     Type     Bind     Ndx        Name
+0   0       0        NOTYP    LOC      UND        
+1   0       0        NOTYP    GLOB     5          mathAdd
+2   24      0        NOTYP    GLOB     5          mathSub
+3   48      0        NOTYP    GLOB     5          mathMul
+4   72      0        NOTYP    GLOB     5          mathDiv
+5   0       96       SCTN     LOC      5          math
+
+
+#.section_tab
+ID  SIZE        NAME        Literals:
+1   96          math        
+
+
+#.machice_code: 
+math
+0000: 81 e0 2f fc 92 10 e0 08 
+0008: 92 20 e0 0c 50 11 20 00 
+0010: 93 2e 00 04 93 fe 00 04 
+0018: 81 e0 2f fc 92 10 e0 08 
+0020: 92 20 e0 0c 51 11 20 00 
+0028: 93 2e 00 04 93 fe 00 04 
+0030: 81 e0 2f fc 92 10 e0 08 
+0038: 92 20 e0 0c 52 11 20 00 
+0040: 93 2e 00 04 93 fe 00 04 
+0048: 81 e0 2f fc 92 10 e0 08 
+0050: 92 20 e0 0c 53 11 20 00 
+0058: 93 2e 00 04 93 fe 00 04 
+
+
+
+
+#.rel_table: math
+Offset RelocationType Number     Addend 
+
+
+

@@ -1,0 +1,131 @@
+FIRST PASS#.symtab
+Num Value   Size     Type     Bind     Ndx        Name
+0   0       0        NOTYP    LOC      UND        
+1   0       0        NOTYP    GLOB     UND        handler
+2   0       0        NOTYP    GLOB     UND        mathAdd
+3   0       0        NOTYP    GLOB     UND        mathSub
+4   0       0        NOTYP    GLOB     UND        mathMul
+5   0       0        NOTYP    GLOB     UND        mathDiv
+6   0       0        NOTYP    GLOB     14         my_start
+7   0       0        NOTYP    GLOB     15         value1
+8   4       0        NOTYP    GLOB     15         value2
+9   8       0        NOTYP    GLOB     15         value3
+10  12      0        NOTYP    GLOB     15         value4
+11  16      0        NOTYP    GLOB     15         value5
+12  20      0        NOTYP    GLOB     15         value6
+13  24      0        NOTYP    GLOB     15         value7
+14  0       196      SCTN     LOC      14         my_code
+15  0       28       SCTN     LOC      15         my_data
+
+
+#.section_tab
+ID  SIZE        NAME        Literals:
+1   196         my_code     FFFFFEFE, 1, F0000000, 2, 7, b, 5, 19, 4, 18, 
+2   28          my_data     
+
+
+SECOND PASS#.symtab
+Num Value   Size     Type     Bind     Ndx        Name
+0   0       0        NOTYP    LOC      UND        
+1   0       0        NOTYP    GLOB     UND        handler
+2   0       0        NOTYP    GLOB     UND        mathAdd
+3   0       0        NOTYP    GLOB     UND        mathSub
+4   0       0        NOTYP    GLOB     UND        mathMul
+5   0       0        NOTYP    GLOB     UND        mathDiv
+6   0       0        NOTYP    GLOB     14         my_start
+7   0       0        NOTYP    GLOB     15         value1
+8   4       0        NOTYP    GLOB     15         value2
+9   8       0        NOTYP    GLOB     15         value3
+10  12      0        NOTYP    GLOB     15         value4
+11  16      0        NOTYP    GLOB     15         value5
+12  20      0        NOTYP    GLOB     15         value6
+13  24      0        NOTYP    GLOB     15         value7
+14  0       196      SCTN     LOC      14         my_code
+15  0       28       SCTN     LOC      15         my_data
+
+
+#.section_tab
+ID  SIZE        NAME        Literals:
+1   196         my_code     FFFFFEFE, 1, F0000000, 2, 7, b, 5, 19, 4, 18, 
+2   28          my_data     
+
+
+#.machice_code: 
+my_code
+0000: 91 ef 00 00 91 1f 00 00 
+0008: 94 11 00 00 10 00 00 00 
+0010: 91 1f 00 00 81 e0 1f fc 
+0018: 91 1f 00 00 81 e0 1f fc 
+0020: 20 f0 00 00 80 0f 10 00 
+0028: 91 1f 00 00 81 e0 1f fc 
+0030: 91 1f 00 00 81 e0 1f fc 
+0038: 20 f0 00 00 80 0f 10 00 
+0040: 91 1f 00 00 81 e0 1f fc 
+0048: 91 1f 00 00 81 e0 1f fc 
+0050: 20 f0 00 00 80 0f 10 00 
+0058: 91 1f 00 00 81 e0 1f fc 
+0060: 91 1f 00 00 81 e0 1f fc 
+0068: 20 f0 00 00 80 0f 10 00 
+0070: 91 1f 00 00 81 e0 1f fc 
+0078: 91 1f 00 00 81 e0 1f fc 
+0080: 20 f0 00 00 80 0f 10 00 
+0088: 92 1f 00 00 92 11 00 00 
+0090: 92 2f 00 00 92 22 00 00 
+0098: 92 3f 00 00 92 33 00 00 
+00a0: 92 4f 00 00 92 44 00 00 
+00a8: 92 5f 00 00 92 55 00 00 
+00b0: 92 6f 00 00 92 66 00 00 
+00b8: 92 7f 00 00 92 77 00 00 
+00c0: 00 00 00 00 fe fe ff ff 
+00c8: 01 00 00 00 00 00 00 f0 
+00d0: 02 00 00 00 07 00 00 00 
+00d8: 0b 00 00 00 05 00 00 00 
+00e0: 19 00 00 00 04 00 00 00 
+00e8: 18 00 00 00 
+
+#.machice_code: 
+my_data
+0000: 00 00 00 00 00 00 00 00 
+0008: 00 00 00 00 00 00 00 00 
+0010: 00 00 00 00 00 00 00 00 
+0018: 00 00 00 00 
+
+
+
+#.rel_table: my_code
+Offset RelocationType Number     Addend 
+0002   R_PC_32           14         00c0
+0006   R_32              1          0000
+0012   R_PC_32           14         00b4
+001a   R_PC_32           14         00ac
+0022   R_PC_32           14         00a8
+0026   R_32              8          0000
+002a   R_PC_32           14         00a4
+0032   R_PC_32           14         0094
+003a   R_32              2          0000
+003e   R_32              9          0000
+0042   R_PC_32           14         0090
+004a   R_PC_32           14         008c
+0052   R_32              3          0000
+0056   R_32              10         0000
+005a   R_PC_32           14         0080
+0062   R_PC_32           14         007c
+006a   R_32              5          0000
+006e   R_32              11         0000
+0072   R_PC_32           14         0070
+007a   R_PC_32           14         006c
+0082   R_32              5          0000
+0086   R_32              12         0000
+008a   R_32              7          0000
+0092   R_32              8          0000
+009a   R_32              9          0000
+00a2   R_32              10         0000
+00aa   R_32              11         0000
+00b2   R_32              12         0000
+00ba   R_32              13         0000
+
+#.rel_table: my_data
+Offset RelocationType Number     Addend 
+
+
+

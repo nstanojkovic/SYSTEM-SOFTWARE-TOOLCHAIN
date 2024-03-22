@@ -1,0 +1,43 @@
+FIRST PASS#.symtab
+Num Value   Size     Type     Bind     Ndx        Name
+0   0       0        NOTYP    LOC      UND        
+1   0       0        NOTYP    GLOB     UND        value1
+2   0       32       SCTN     LOC      2          isr
+3   0       0        NOTYP    GLOB     2          isr_software
+
+
+#.section_tab
+ID  SIZE        NAME        Literals:
+1   32          isr         ABCD, 
+
+
+SECOND PASS#.symtab
+Num Value   Size     Type     Bind     Ndx        Name
+0   0       0        NOTYP    LOC      UND        
+1   0       0        NOTYP    GLOB     UND        value1
+2   0       32       SCTN     LOC      2          isr
+3   0       0        NOTYP    GLOB     2          isr_software
+
+
+#.section_tab
+ID  SIZE        NAME        Literals:
+1   32          isr         ABCD, 
+
+
+#.machice_code: 
+isr 
+0000: 81 e0 1f fc 81 e0 2f fc 
+0008: 91 1f 00 00 91 2f 00 00 
+0010: 80 20 10 00 93 2e 00 04 
+0018: 93 1e 00 04 93 fe 00 04 
+0020: cd ab 00 00 
+
+
+
+#.rel_table: isr
+Offset RelocationType Number     Addend 
+000a   R_PC_32           2          0014
+000e   R_32              1          0000
+
+
+
